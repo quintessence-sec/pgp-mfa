@@ -99,18 +99,18 @@ according to the results, we can deduce that the most optimal configuration is t
 
 ### resistance to brute-force attacks
 
-the charset of challenges is, by default: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_+/\\'"!@#$%^&*()[]{}<>?,.;:`, which is a total of 91 characters.
+the charset of challenges is, by default: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_+/\'"!@#$%^&*()[]{}<>?,.;:`, which is a total of 90 characters.
 
 if we consider an ed25519 key we can process 128 bytes in 41.584 microseconds (≈ 3.078 MB/s ~ 24046.875 attempts/s).
 
 | challenge length | number of possible solutions | probability of 1st try success | number of years to brute-force |
 | --- | --- | --- | --- |
-| 16 bytes | 2.211E+31 | 4.522E-30% | 9.196E+26
-| 32 bytes | 4.890E+62 | 2.045E-61% | 2.034E+58
-| 64 bytes | 2.391E+125 | 4.182E-124% | 9.945E+120
-| 128 bytes | 5.719E+250 | 1.749E-249% | 2.378E+246
-| 256 bytes | 3.270E+501 | 3.058E-500% | 1.360E+497
-| 512 bytes | 1.070E+1003 | 9.350E-1002% | 4.448E+998
+| 16 bytes | 1.853E+31 | 5.397E-30% | 7.706E+26
+| 32 bytes | 3.434E+62 | 2.912E-61% | 1.428E+58
+| 64 bytes | 1.179E+125 | 8.482E-124% | 4.903E+120
+| 128 bytes | 1.390E+250 | 7.194E-249% | 5.781E+245
+| 256 bytes | 1.932E+500 | 5.175E-499% | 8.036E+495
+| 512 bytes | 3.734E+1000 | 2.678E-999% | 1.553E+996
 
 this is, of course, assuming that:
 
