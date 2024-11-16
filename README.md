@@ -117,3 +117,4 @@ this is, of course, assuming that:
 1. the randomness of the challenge is perfectly random
 2. the brute-force attacker has no access to the server
 3. there are no delays between retries, and there are no maximum number of attempts
+4. the challenge does not expire
